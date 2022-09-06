@@ -66,6 +66,156 @@ CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics
 $ code .
 
 
+//////////
+
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics
+$ git init
+Initialized empty Git repository in C:/Users/CSE/yash202000405/gitbasics/.git/
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        about.html
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ git add index.html
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ git add about.html
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   about.html
+        new file:   index.html
+
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ git commit -m "Your message"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'CSE@DESKTOP-JHEUKFI.(none)')
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ git config --local user.email "@"
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ git config --local user.name "s"
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ git commit -m "First commit"
+[master (root-commit) 35b12a1] First commit
+ 2 files changed, 25 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 index.html
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ git log
+commit 35b12a1c90c1292eb91dad9ae6cc86f215089972 (HEAD -> master)
+Author: s <@>
+Date:   Tue Sep 6 09:42:59 2022 +0530
+
+    First commit
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ git add .
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ git commit -m "My second commit"
+[master 02feb8c] My second commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ git log
+commit 02feb8c0dc70fbff5d2c688abaecf33d971894a3 (HEAD -> master)
+Author: s <@>
+Date:   Tue Sep 6 09:45:27 2022 +0530
+
+    My second commit
+
+commit 35b12a1c90c1292eb91dad9ae6cc86f215089972
+Author: s <@>
+Date:   Tue Sep 6 09:42:59 2022 +0530
+
+    First commit
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ git remote add origin https://github.com/Yashj7/my-first-repo.git
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ git remote -v
+origin  https://github.com/Yashj7/my-first-repo.git (fetch)
+origin  https://github.com/Yashj7/my-first-repo.git (push)
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ git checkout master
+Already on 'master'
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 759 bytes | 759.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Yashj7/my-first-repo.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ cd..
+bash: cd..: command not found
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics (master)
+$ cd ..
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405
+$ mkdir portfolio
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405
+$ cd portfolio/
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio
+$ code
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio
+$ code .
 
 
 //////////
