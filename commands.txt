@@ -1,0 +1,185 @@
+CSE@DESKTOP-JHEUKFI MINGW64 ~/Desktop/Yash
+$ cd ~
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~
+$ pwd
+/c/Users/CSE
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~
+$ cd /
+
+CSE@DESKTOP-JHEUKFI MINGW64 /
+$ ls
+bin/  cmd/  dev/  etc/  git-bash.exe*  git-cmd.exe*  LICENSE.txt  mingw64/  proc/  ReleaseNotes.html  tmp/  unins000.dat  unins000.exe*  unins000.msg  usr/
+
+CSE@DESKTOP-JHEUKFI MINGW64 /
+$ cd ~
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~
+$ mkdir yash202000405
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~
+$ ls
+ AppData/             Documents/               Music/            NTUSER.DAT{4e074668-0c1c-11e7-a943-e41d2d718a20}.TM.blf                                        PrintHood@      Templates@
+'Application Data'@   Downloads/              'My Documents'@    NTUSER.DAT{4e074668-0c1c-11e7-a943-e41d2d718a20}.TMContainer00000000000000000001.regtrans-ms   Recent@         Videos/
+ Contacts/            Favorites/               NetHood@          NTUSER.DAT{4e074668-0c1c-11e7-a943-e41d2d718a20}.TMContainer00000000000000000002.regtrans-ms  'Saved Games'/   yash202000405/
+ Cookies@             IntelGraphicsProfiles/   NTUSER.DAT        ntuser.ini                                                                                     Searches/
+ demo/                Links/                   ntuser.dat.LOG1   OneDrive/                                                                                      SendTo@
+ Desktop/            'Local Settings'@         ntuser.dat.LOG2   Pictures/                                                                                     'Start Menu'@
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~
+$ ls -a
+ ./                     .gitconfig          'Application Data'@   IntelGraphicsProfiles/   ntuser.dat.LOG2                                                                                Recent@
+ ../                    .ipython/            Contacts/            Links/                   NTUSER.DAT{4e074668-0c1c-11e7-a943-e41d2d718a20}.TM.blf                                       'Saved Games'/
+ .angular-config.json   .matplotlib/         Cookies@            'Local Settings'@         NTUSER.DAT{4e074668-0c1c-11e7-a943-e41d2d718a20}.TMContainer00000000000000000001.regtrans-ms   Searches/
+ .appletviewer          .mongorc.js          demo/                Music/                   NTUSER.DAT{4e074668-0c1c-11e7-a943-e41d2d718a20}.TMContainer00000000000000000002.regtrans-ms   SendTo@
+ .bash_history          .node_repl_history   Desktop/            'My Documents'@           ntuser.ini                                                                                    'Start Menu'@
+ .bash_profile          .spyder-py3/         Documents/           NetHood@                 OneDrive/                                                                                      Templates@
+ .bashrc                .vscode/             Downloads/           NTUSER.DAT               Pictures/                                                                                      Videos/
+ .dbshell               AppData/             Favorites/           ntuser.dat.LOG1          PrintHood@                                                                                     yash202000405/
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~
+$ cd yash202000405
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405
+$ ls
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405
+$ ls -a
+./  ../
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405
+$ pwd
+/c/Users/CSE/yash202000405
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405
+$ mkdir gitbasics
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405
+$ cd gitbasics
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics
+$ pwd
+/c/Users/CSE/yash202000405/gitbasics
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/gitbasics
+$ code .
+
+
+
+
+//////////
+
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio
+$ git init
+Initialized empty Git repository in C:/Users/CSE/yash202000405/portfolio/.git/
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio (master)
+$ git add .
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio (master)
+$ git commit -m "Your message"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'CSE@DESKTOP-JHEUKFI.(none)')
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio (master)
+$ git commitgit config --local user.email "@"
+git: 'commitgit' is not a git command. See 'git --help'.
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio (master)
+$ git config --local user.email "@"
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio (master)
+$ git config --local user.name "s"
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio (master)
+$ git commit -m "My Index file"                                                                                                                       
+[master (root-commit) 99b4262] My Index file
+ 1 file changed, 12 insertions(+)
+ create mode 100644 index.html
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio (master)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio (master)
+$ git remote add origin https://github.com/Yashj7/Yashj7.github.io.git
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 375 bytes | 375.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Yashj7/Yashj7.github.io.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio (master)
+$  git remote -v
+origin  https://github.com/Yashj7/Yashj7.github.io.git (fetch)
+origin  https://github.com/Yashj7/Yashj7.github.io.git (push)
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio (master)
+$ git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio (master)
+$ git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio (master)
+$ it push -u origin master
+bash: it: command not found
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio (master)
+$ git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio (master)
+$ git remote -v
+origin  https://github.com/Yashj7/Yashj7.github.io.git (fetch)
+origin  https://github.com/Yashj7/Yashj7.github.io.git (push)
+
+CSE@DESKTOP-JHEUKFI MINGW64 ~/yash202000405/portfolio (master)
+$ git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
